@@ -20,6 +20,8 @@
 
 ## Table Of Contents
 - [Summary](#summary)
+- [Models](#models)
+  - cow detection
 - [Acknowledgments](#acknowledgments)
 
 ## Summary
@@ -28,6 +30,11 @@ We propose an use of UAV images and videos to automatically recognize and count 
 Two computer vision scripts are currently in development:
 - a script for cow recognition and counting from UAV images.
 - a script for sheep recognition and counting from UAV videos.
+
+## Models
+For now, one model has been developed using YOLOv8 pre-trained model from ultralytics.
+
+Work still in progress.
 
 ## Acknowledgments
 This project is funded by the European Union, grant ID 101060643.
