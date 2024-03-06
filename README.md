@@ -21,18 +21,24 @@
 ## Table Of Contents
 - [Summary](#summary)
 - [Models](#models)
-  - cow detection
+  - [Cow detection](#cowmodel)
 - [Acknowledgments](#acknowledgments)
 
 ## Summary
 We propose an use of UAV images and videos to automatically recognize and count animals in extensive areas. 
 
-Two computer vision scripts are currently in development:
-- a script for cow recognition and counting from UAV images.
-- a script for sheep recognition and counting from UAV videos.
+Two computer vision models are currently in development:
+- A model for cow recognition and counting from UAV images in nadir position.
+- A model for sheep recognition and counting from UAV videos.
 
 ## Models
-For now, one model has been developed using YOLOv8 pre-trained model from ultralytics.
+
+### Cow detection
+For now, one cow detection model has been developed using YOLOv8-n pre-trained model from ultralytics.
+
+Detection results: 
+- Precision: 0.98
+- Recall: 0.83
 
 Work still in progress.
 
