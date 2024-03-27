@@ -21,7 +21,8 @@
 ## Table Of Contents
 - [Summary](#summary)
 - [Models](#models)
-  - [Cow detection](#cowmodel)
+  - [Cow detection](#cowdetection)
+  - [Sheep detection](#sheepdetection)
 - [Acknowledgments](#acknowledgments)
 
 ## Summary
@@ -34,13 +35,12 @@ Two computer vision models are currently in development:
 ## Models
 
 ### Cow detection
-For now, one cow detection model has been developed using YOLOv8-n pre-trained model from ultralytics.
-
-Detection results: 
-- Precision: 0.98
-- Recall: 0.83
+Cow detection models have been developed using YOLOv8-n pre-trained model from ultralytics.
 
 Work still in progress.
+
+### Sheep detection
+Work in progress.
 
 ## Acknowledgments
 This project is funded by the European Union, grant ID 101060643.

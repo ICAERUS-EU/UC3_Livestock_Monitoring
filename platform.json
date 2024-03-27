@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Cow detection model v1",
+        "creator": "Louise Helary",
+        "date": "06/03/2024",
+        "url": "https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/Models/01_cow_detection_v1",
+        "icaerus_applications": [
+            "livestock-monitoring"
+        ],
+        "uses_cases": [
+            "3"
+        ],
+        "extra": {
+            "key1": "",
+            "key2": ""
+        },
+        "filters": {
+            "content": [
+                "Deep learning",
+                "Computer vision",
+                "Detection"
+            ],
+            "data-type": [
+                "RGB images"
+            ],
+            "subject": [
+                "Cattle"
+            ],
+            "location": [
+                "France"
+            ]
+        }
+    }
+]
