@@ -1,4 +1,4 @@
-# Cow Detection Model
+# Cow Detection Model v1
 
 This repository contains code for a cow detection model using PyTorch and YOLO. <br>
 
@@ -11,16 +11,16 @@ This repository contains code for a cow detection model using PyTorch and YOLO. 
 
 ## Dataset
 
-The dataset used for training this model consists of images collected from three outdoor cattle farms in France using a UAV (Mavic 3 Enterprise or Mavic 3 Thermal). The flights were conducted at an altitude of 60 or 100 meters in nadir position. Images and their corresponding labeling files are available on the Zenodo repository [ICAERUS HE Project](https://zenodo.org/records/10245396).
+The dataset used for training this model consists of images collected from three outdoor cattle farms in France using a UAV (Mavic 3 Enterprise or Mavic 3 Thermal). The flights were conducted at an altitude of 30, 60 or 100 meters in nadir position. Images and their corresponding labeling files are available on the Zenodo repository [ICAERUS HE Project](https://zenodo.org/records/10245396).
 
-Several breeds with different body color are present in the dataset:
-- **white**: Charolaises in Jalogny farm
-- **spotted**: Prim'Holstein, Normandes in Mauron and Derval farms
-- **black/red**: Salers, some Prim'Holstein in Mauron and Derval farms
+The following breeds with distinct body colors are present in the dataset:
+- **White**: Charolaises in Jalogny farm
+- **Spotted**: Prim'Holstein, Normandes in Mauron and Derval farms
+- **Black/red**: Salers, along with some black Prim'Holstein in Mauron and Derval farms
 
 Image size can be 4000x3000 or 5280x3956 depending on the drone used.
 
-
+![Image collected in Mauron farm, 100m altitude, nadir position, cows with multiple body colors.](../../Docs/Images/mauron_example1.JPG)
 
 ## Data Preparation
 
@@ -40,7 +40,17 @@ All images with animals from the dataset were used (241 over 1148). Dataset was 
 - lr: 0.01
 - momentum: 0.937
 
-## Metrics
+## Results
 
+Metrics: 
 - Precision: 0.67
 - Recall: 0.60
+<br>
+
+An example of cow detection in a image from test population:
+![Detection of cows in the same image.](../../Docs/Images/mauron_example1_predict_v1.png)
+
+
+<!--[PRcurve?]
+[ROCcurve]
+[IOU] -->
