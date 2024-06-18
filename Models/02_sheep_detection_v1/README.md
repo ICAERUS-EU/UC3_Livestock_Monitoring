@@ -39,7 +39,9 @@ All images from both are organized in train/validation/test:
 - recall = 0.76
 - precision = 0.93
 
-![Detection of sheeps in a video.](../../Docs/Images/detection_sheep1.mp4)
+https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/assets/99217487/0bbd56ab-905b-473e-91db-b5fb0aa479ef
+
+
 
 <!--
 
