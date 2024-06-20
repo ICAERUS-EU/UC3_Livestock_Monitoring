@@ -36,7 +36,7 @@
         "title": "Cow detection model v2",
         "creator": "Louise Helary",
         "date": "25/03/2024",
-        "icon":"https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/Docs/Images/cow_model_icon.PNG?raw=true",
+        "icon":"https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/assets/99217487/e49eead8-32ee-46da-9b04-e10a8585c974",
         "url": "https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/Models/01_cow_detection_v2",
         "icaerus_applications": [
             "livestock-monitoring"
@@ -59,6 +59,107 @@
             ],
             "subject": [
                 "Cattle"
+            ],
+            "location": [
+                "France"
+            ]
+        }
+    },
+    {
+        "title": "Sheep detection model v1",
+        "creator": "Louise Helary",
+        "date": "25/03/2024",
+        "icon":"https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/assets/99217487/7ffcc2e8-23a6-4823-b98c-f25ad3c30a97",
+        "url": "https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/Models/02_sheep_detection_v1",
+        "icaerus_applications": [
+            "livestock-monitoring"
+        ],
+        "uses_cases": [
+            "3"
+        ],
+        "extra": {
+            "key1": "",
+            "key2": ""
+        },
+        "filters": {
+            "content": [
+                "Deep learning",
+                "Computer vision",
+                "Detection"
+            ],
+            "data-type": [
+                "RGB images"
+            ],
+            "subject": [
+                "Sheep"
+            ],
+            "location": [
+                "France"
+            ]
+        }
+    },
+    {
+        "title": "Sheep detection model v2",
+        "creator": "Louise Helary",
+        "date": "25/03/2024",
+        "icon":"https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/assets/99217487/7ffcc2e8-23a6-4823-b98c-f25ad3c30a97",
+        "url": "https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/Models/02_sheep_detection_v2",
+        "icaerus_applications": [
+            "livestock-monitoring"
+        ],
+        "uses_cases": [
+            "3"
+        ],
+        "extra": {
+            "key1": "",
+            "key2": ""
+        },
+        "filters": {
+            "content": [
+                "Deep learning",
+                "Computer vision",
+                "Detection"
+            ],
+            "data-type": [
+                "RGB images"
+            ],
+            "subject": [
+                "Sheep"
+            ],
+            "location": [
+                "France"
+            ]
+        }
+    },
+    {
+        "title": "Sheep counter on a line",
+        "creator": "Louise Helary",
+        "date": "25/03/2024",
+        "icon":"https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/assets/99217487/51c1bb78-1716-4bf3-bcc3-dce32a0c2810",
+        "url": "https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/Models/03_sheep_counter_line",
+        "icaerus_applications": [
+            "livestock-monitoring"
+        ],
+        "uses_cases": [
+            "3"
+        ],
+        "extra": {
+            "key1": "",
+            "key2": ""
+        },
+        "filters": {
+            "content": [
+                "Deep learning",
+                "Computer vision",
+                "Detection",
+                "Tracking",
+                "Counting"
+            ],
+            "data-type": [
+                "RGB images"
+            ],
+            "subject": [
+                "Sheep"
             ],
             "location": [
                 "France"
