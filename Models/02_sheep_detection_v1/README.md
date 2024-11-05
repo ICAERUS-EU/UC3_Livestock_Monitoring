@@ -1,15 +1,15 @@
-# Sheep Detection Model v1
+# 🐏 Sheep Detection Model v1
 
 This repository contains code for a sheep detection model using YOLO v8. <br>
 
-## Requirements
+## 💻 Requirements
 
 - **GPU**: The model requires a GPU to train efficiently. Please ensure that you have access to a GPU before proceeding. <br>
 - **PyTorch Library**: Refer to the PyTorch website to install the appropriate version based on your operating system. You can find the installation instructions here: <https://pytorch.org/> <br>
 - **YOLO Library**: You can install the YOLO library by running `pip install ultralytics`.
 - **yaml file**: Give the access directory to the dataset.
 
-## Dataset
+## 📄 Dataset
 This model was built using two roboflow universe dataset. Both contained aerial photos of sheeps 
 
 <!-- 

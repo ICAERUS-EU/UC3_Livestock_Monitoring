@@ -1,15 +1,15 @@
-# Cow Detection Model v1
+#  🐄 Cow Detection Model v1
 
 This repository contains code for a cow detection model using PyTorch and YOLO. <br>
 
-## Requirements
+## 💻 Requirements
 
 - **GPU**: The model requires a GPU to train efficiently. Please ensure that you have access to a GPU before proceeding. <br>
 - **PyTorch Library**: Refer to the PyTorch website to install the appropriate version based on your operating system. You can find the installation instructions here: <https://pytorch.org/> <br>
 - **YOLO Library**: You can install the YOLO library by running `pip install ultralytics`.
 - **yaml file**: Give the access directory to the dataset.
 
-## Dataset
+## 📄 Dataset
 
 The dataset used for training this model consists of images collected from three outdoor cattle farms in France using a UAV (Mavic 3 Enterprise or Mavic 3 Thermal). The flights were conducted at an altitude of 30, 60 or 100 meters in nadir position. Images and their corresponding labeling files are available on the Zenodo repository [ICAERUS HE Project](https://zenodo.org/records/10245396).
 
@@ -49,8 +49,3 @@ Metrics:
 
 An example of cow detection in a image from test population:
 ![Detection of cows in the same image.](../../Docs/Images/mauron_example1_predict_v1.png)
-
-
-<!--[PRcurve?]
-[ROCcurve]
-[IOU] -->
