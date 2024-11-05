@@ -130,40 +130,5 @@
                 "France"
             ]
         }
-    },
-    {
-        "title": "Sheep counter on a line",
-        "creator": "Louise Helary",
-        "date": "25/03/2024",
-        "icon":"https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/assets/99217487/51c1bb78-1716-4bf3-bcc3-dce32a0c2810",
-        "url": "https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/Models/03_sheep_counter_line",
-        "icaerus_applications": [
-            "livestock-monitoring"
-        ],
-        "uses_cases": [
-            "3"
-        ],
-        "extra": {
-            "key1": "",
-            "key2": ""
-        },
-        "filters": {
-            "content": [
-                "Deep learning",
-                "Computer vision",
-                "Detection",
-                "Tracking",
-                "Counting"
-            ],
-            "data-type": [
-                "RGB images"
-            ],
-            "subject": [
-                "Sheep"
-            ],
-            "location": [
-                "France"
-            ]
-        }
     }
 ]
