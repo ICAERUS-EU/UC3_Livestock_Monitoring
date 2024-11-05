@@ -23,6 +23,8 @@
 - [Models](#models)
   - [Cow detection](#cowdetection)
   - [Sheep detection](#sheepdetection)
+- [Application](#application)
+  - [Sheep counting](#sheep_counting)
 - [Acknowledgments](#acknowledgments)
 
 ## Summary
@@ -37,10 +39,17 @@ Two computer vision models are currently in development:
 ### Cow detection
 Cow detection models have been developed using YOLOv8-n pre-trained model from ultralytics.
 
-Work still in progress.
+Two models are available in the model repository, more details in this one.
 
 ### Sheep detection
-Work in progress.
+Sheep detection models have been developed using YOLOv8-m pre-trained model from ultralytics.
+
+Two models are available in the model repository, the first being the best.
+
+## Application
+
+### Sheep counting
+Sheep detection model can be used to track and count sheep crossing a field on video. 
 
 ## Acknowledgments
 This project is funded by the European Union, grant ID 101060643.
