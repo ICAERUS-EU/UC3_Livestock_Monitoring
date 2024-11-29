@@ -64,7 +64,7 @@ The model has been trained with YOLOv8 and is able to detect sheep at a height o
 
 ## Application
 
-#### _[Sheep counting](https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/application)_
+#### _[Sheep counting](https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/application/sheep_counting)_
 The script uses one of the sheep detection models, then tracks and counts sheep crossing a field on the video. 
 
 ## Authors
