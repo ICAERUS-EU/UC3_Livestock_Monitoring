@@ -2,7 +2,8 @@
 
 ##  🌍 Overview
 
-This Jupyter Notebook provides a practical solution for counting sheep in video footage using advanced object detection and tracking technologies. Inspired by the techniques and resources from the `supervision` GitHub repository, the notebook outlines a step-by-step approach to load a pre-trained model for object detection and then track and count sheep as they pass a virtual line using ByteTrack. The notebook is an application of the tutorial [Count Objects Crossing the Line](https://supervision.roboflow.com/develop/notebooks/count-objects-crossing-the-line/) from Supervision.
+These Jupyter Notebooks provides a practical solution for counting sheep in video footage using advanced object detection and tracking technologies. Inspired by the techniques and resources from the Supervision GitHub repository, the notebook outlines a step-by-step approach to load a pre-trained model for object detection and then track and count sheep as they pass a virtual line or a polygon zone using ByteTrack. The `count_sheep_line` notebook is an application of the tutorial [Count Objects Crossing the Line](https://supervision.roboflow.com/develop/notebooks/count-objects-crossing-the-line/) from Supervision.
+The `count_sheep_polygon` notebook is an application of the tutorial [How To Analyze Occupancy](https://supervision.roboflow.com/develop/notebooks/occupancy_analytics/#install-relevant-packages) from Supervision.
 
 The primary objectives of this notebook are:
 
@@ -18,4 +19,10 @@ The primary objectives of this notebook are:
 
 ## 💻 Requirement
 
-pip or conda install the os, ultralytics and supervision packages in a Python >= 3.8 environment.
+Using the requirements.txt file: use pip or conda using one of these commands:
+
+`pip install -r requirements.txt`
+
+`conda create --name <env> --file requirements.txt`
+
+

@@ -41,10 +41,10 @@ More details on models section.
 
 The repository folders are structured as follow:
 
-- data: some example videos and images to use application scripts. You can find on Zenodo others [sheep video](https://zenodo.org/records/10400302) and [cow images](https://zenodo.org/records/8234156) that you could download and add to data repository to test models and application scripts.
-- models: models developed for animals detection.
-- appplication: application scripts using sheep models to count animals.
-- platform.json: organized information about the models.
+- **data**: some example videos and images to use application scripts. You can find on Zenodo others [sheep video](https://zenodo.org/records/10400302) and [cow images](https://zenodo.org/records/8234156) that you could download and add to data repository to test models and application scripts.
+- **models:** models developed for animals detection.
+- **appplication:** application scripts using sheep models to count animals.
+- **platform.json:** organized information about the models.
 
 ## Models
 
