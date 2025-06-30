@@ -56,16 +56,16 @@ The model has been trained with YOLOv8 and is capable of detecting cow at a heig
 #### _[Cow detection model in aerial view with YOLOv8 - Mosaic images](https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/cow_detection/cow_detection_v2)_
 The model has been trained with YOLOv8 and is able to detect cows from large images divided into several small images (resolution = 640x640 px).
 
-#### _[Sheep detection model in aerial view with YOLOv8 - version 1](https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/sheep_detection/sheep_detection_yolo8m_v1)_
+#### _[Sheep detection model in aerial view with YOLOv8 - version 1](https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/sheep_detection/yolo8m_sheep_v1)_
 The model has been trained with YOLOv8 and is able to detect sheep at a height of 5 to 10 meters.
 
-#### _[Sheep detection model in aerial view with YOLOv8 - version 2](https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/sheep_detection/sheep_detection_yolo8m_v2)_
+#### _[Sheep detection model in aerial view with YOLOv8 - version 2](https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/sheep_detection/yolo8m_sheep_v2)_
 The model has been trained with YOLOv8 and is able to detect sheep at a height of 5 to 10 meters. The dataset used to train the model is different from the previous one.
 
-#### _[Sheep detection model in aerial view using YOLOv11n](https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/sheep_detection/sheep_detection_yolo11n)_
+#### _[Sheep detection model in aerial view using YOLOv11n](https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/sheep_detection/yolo11n_sheep)_
 The model has been trained with the lightest version of YOLOv11 and is capable of detecting sheep at a height of 5 to 10 meters. This model detects animals faster than other versions of yolo11 and will be more interesting to deploy.
 
-#### _[Sheep detection model in aerial view using YOLOv11s](https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/sheep_detection/sheep_detection_yolo11s)_
+#### _[Sheep detection model in aerial view using YOLOv11s](https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/sheep_detection/yolo11s_sheep)_
 The model has been trained with a light version of YOLOv11 and is capable of detecting sheep at a height of 5 to 10 meters. This model combines fast execution compared to yolov11m and good detection of animals compared to yolov11n.
 
 ## Application
