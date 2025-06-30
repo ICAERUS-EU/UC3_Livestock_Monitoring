@@ -4,7 +4,7 @@
         "creator": "Louise Helary",
         "date": "06/03/2024",
         "icon":"https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/assets/99217487/e49eead8-32ee-46da-9b04-e10a8585c974",
-        "url": "https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/01_cow_detection_v1",
+        "url": "https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/cow_detection/cow_detection_v1",
         "icaerus_applications": [
             "livestock-monitoring"
         ],
@@ -37,7 +37,7 @@
         "creator": "Louise Helary",
         "date": "25/03/2024",
         "icon":"https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/assets/99217487/e49eead8-32ee-46da-9b04-e10a8585c974",
-        "url": "https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/01_cow_detection_v2",
+        "url": "https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/cow_detection/cow_detection_v2",
         "icaerus_applications": [
             "livestock-monitoring"
         ],
@@ -66,11 +66,11 @@
         }
     },
     {
-        "title": "Sheep detection model v1",
+        "title": "Sheep detection model using YOLOv8m v1",
         "creator": "Louise Helary",
         "date": "25/03/2024",
         "icon":"https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/assets/99217487/7ffcc2e8-23a6-4823-b98c-f25ad3c30a97",
-        "url": "https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/02_sheep_detection_v1",
+        "url": "https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/sheep_detection/yolo8m_sheep_v1",
         "icaerus_applications": [
             "livestock-monitoring"
         ],
@@ -99,11 +99,11 @@
         }
     },
     {
-        "title": "Sheep detection model v2",
+        "title": "Sheep detection model using YOLOv8m v2",
         "creator": "Louise Helary",
         "date": "25/03/2024",
         "icon":"https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/assets/99217487/7ffcc2e8-23a6-4823-b98c-f25ad3c30a97",
-        "url": "https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/02_sheep_detection_v2",
+        "url": "https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/sheep_detection/yolo8m_sheep_v2",
         "icaerus_applications": [
             "livestock-monitoring"
         ],
@@ -132,11 +132,77 @@
         }
     },
     {
-        "title": "Sheep detection model v2",
+        "title": "Sheep detection model using YOLOv11n",
+        "creator": "Louise Helary",
+        "date": "30/06/2025",
+        "icon":"https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/assets/99217487/7ffcc2e8-23a6-4823-b98c-f25ad3c30a97",
+        "url": "https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/sheep_detection/yolo11n_sheep",
+        "icaerus_applications": [
+            "livestock-monitoring"
+        ],
+        "uses_cases": [
+            "3"
+        ],
+        "extra": {
+            "key1": "",
+            "key2": ""
+        },
+        "filters": {
+            "content": [
+                "Deep learning",
+                "Computer vision",
+                "Detection"
+            ],
+            "data-type": [
+                "RGB images"
+            ],
+            "subject": [
+                "Sheep"
+            ],
+            "location": [
+                "France"
+            ]
+        }
+    },
+    {
+        "title": "Sheep detection model using YOLOv11s",
+        "creator": "Louise Helary",
+        "date": "30/06/2025",
+        "icon":"https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/assets/99217487/7ffcc2e8-23a6-4823-b98c-f25ad3c30a97",
+        "url": "https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/sheep_detection/yolo11s_sheep",
+        "icaerus_applications": [
+            "livestock-monitoring"
+        ],
+        "uses_cases": [
+            "3"
+        ],
+        "extra": {
+            "key1": "",
+            "key2": ""
+        },
+        "filters": {
+            "content": [
+                "Deep learning",
+                "Computer vision",
+                "Detection"
+            ],
+            "data-type": [
+                "RGB images"
+            ],
+            "subject": [
+                "Sheep"
+            ],
+            "location": [
+                "France"
+            ]
+        }
+    },
+    {
+        "title": "Sheep detection model application: counting sheep",
         "creator": "Louise Helary",
         "date": "25/03/2024",
         "icon":"https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/assets/99217487/7ffcc2e8-23a6-4823-b98c-f25ad3c30a97",
-        "url": "https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/application/sheep_counting",
+        "url": "https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/application/sheep_counting/",
         "icaerus_applications": [
             "livestock-monitoring"
         ],
