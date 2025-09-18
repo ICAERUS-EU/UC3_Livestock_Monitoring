@@ -75,6 +75,7 @@ The script uses one of the sheep detection models, then tracks and counts sheep 
 
 ## Authors
 - Louise Helary - Institut de l'Elevage (IDELE) - [Louise Helary](https://github.com/louisehelary)
+- Madeline Le Pors - Institut de l'Elevage (IDELE) - [Madeline Le Pors](https://github.com/madelinelepors)
 
 ## Acknowledgments
 This project is funded by the European Union, grant ID 101060643.
