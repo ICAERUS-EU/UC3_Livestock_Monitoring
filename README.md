@@ -70,8 +70,15 @@ The model has been trained with a light version of YOLOv11 and is capable of det
 
 ## Application
 
-#### _[Sheep counting](https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/application/sheep_counting)_
+#### _[Notebooks](https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/application/notebooks)_
 The script uses one of the sheep detection models, then tracks and counts sheep crossing a field on the video. 
+
+#### _[Deployment tools for sheep counting](https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/application/deployment)_
+This folder contains two separate deployment tools for the sheep counting application:
+- **End-User Deployment**: Designed for end users, this tool provides a simple and ready-to-use setup for running the application.
+- **Researcher Deployment**: Aimed at researchers, this tool makes it easy to set up local videos of sheep counting for testing, development, and customization.
+
+These two deployment modes ensure both ease of use for non-technical users and flexibility for researchers.
 
 ## Authors
 - Louise Helary - Institut de l'Elevage (IDELE) - [Louise Helary](https://github.com/louisehelary)

@@ -202,7 +202,42 @@
         "creator": "Louise Helary",
         "date": "25/03/2024",
         "icon":"https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/assets/99217487/7ffcc2e8-23a6-4823-b98c-f25ad3c30a97",
-        "url": "https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/application/sheep_counting/",
+        "url": "https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/application/notebooks/",
+        "icaerus_applications": [
+            "livestock-monitoring"
+        ],
+        "uses_cases": [
+            "3"
+        ],
+        "extra": {
+            "key1": "",
+            "key2": ""
+        },
+        "filters": {
+            "content": [
+                "Deep learning",
+                "Computer vision",
+                "Detection",
+                "Track",
+                "Counting"
+            ],
+            "data-type": [
+                "RGB images"
+            ],
+            "subject": [
+                "Sheep"
+            ],
+            "location": [
+                "France"
+            ]
+        }
+    },
+    {
+        "title": "Counting sheep deployment",
+        "creator": "Madeline Le Pors",
+        "date": "18/09/2025",
+        "icon":"https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/assets/99217487/7ffcc2e8-23a6-4823-b98c-f25ad3c30a97",
+        "url": "https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/application/deployment/",
         "icaerus_applications": [
             "livestock-monitoring"
         ],
