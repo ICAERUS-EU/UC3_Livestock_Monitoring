@@ -18,7 +18,6 @@ Offers additional flexibility for developers, including:
 
 - Customizing the frame rate (FPS)
 - Selecting different sheep detection models
-- Testing and modifying the pipeline locally
 
 These two deployment modes ensure ease of use for end users and full control for developers.
 
