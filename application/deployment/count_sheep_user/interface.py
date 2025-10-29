@@ -59,8 +59,8 @@ class InterfaceApp(QWidget):
 
         # Default values
         self.selected_fps = 15   
-        self.model_path = "models/yolo11n.pt"
-        self.model_suffix = "11n"
+        self.model_path = "models/yolo8m.pt"
+        self.model_suffix = "8m"
         self.input_video_path = None
         self.drawing_crop = False
         self.crop_start_point = None

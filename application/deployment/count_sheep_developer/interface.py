@@ -104,19 +104,19 @@ class InterfaceApp(QWidget):
 
         self.radio_yolo8m = QRadioButton("YOLO8m")
         self.radio_yolo11n = QRadioButton("YOLO11n")
-        self.radio_yolo11l = QRadioButton("YOLO11l")
+        #self.radio_yolo11l = QRadioButton("YOLO11l")
         self.radio_yolo11n.setChecked(True)  # Default value
 
         self.model_group = QButtonGroup(self)
         self.model_group.addButton(self.radio_yolo8m, 0)
         self.model_group.addButton(self.radio_yolo11n, 1)
-        self.model_group.addButton(self.radio_yolo11l, 2)
+        #self.model_group.addButton(self.radio_yolo11l, 2)
 
         # Dictionary to link ID to model path
         self.model_paths = {
             0: ("models/yolo8m.pt", "8m"),
             1: ("models/yolo11n.pt", "11n"),
-            2: ("models/yolo11l.pt", "11l")
+            #2: ("models/yolo11l.pt", "11l")
         }
 
         self.model_group.buttonClicked[int].connect(self.update_model_selection)
@@ -259,7 +259,7 @@ class InterfaceApp(QWidget):
         model_layout.addWidget(self.model_label)
         model_layout.addWidget(self.radio_yolo8m)
         model_layout.addWidget(self.radio_yolo11n)
-        model_layout.addWidget(self.radio_yolo11l)
+        #model_layout.addWidget(self.radio_yolo11l)
         model_layout.addStretch()
 
         # Layout for fps selection
