@@ -15,7 +15,11 @@ These models were built using two roboflow universe dataset and  annotated video
 
  Dataset 1: [Aerial Sheep](https://universe.roboflow.com/riis/aerial-sheep/dataset/1) <br>
  Dataset 2: [Sheep Gen4](https://universe.roboflow.com/gbes/sheep-gen4/dataset/1) <br>
- Dataset 3: Images extracted from videos obtained by drone in Carmejane farm in France. Videos and annotations available [here](https://zenodo.org/communities/icaerus_he/records?q=&l=list&p=1&s=10&sort=newest). 
+ Dataset 3 : [Dusksheepuav](https://universe.roboflow.com/lars-wuethrich/dusksheepuav) <br>
+ Dataset 4 : [Rough Terrain Sheep UAV](https://universe.roboflow.com/lars-wuethrich/roughterrainsheepuav) <br>
+ Dataset 5 : [Snow Sheep UAV](https://universe.roboflow.com/lars-wuethrich/snowsheepuav) <br>
+ Dataset 6 : Images extracted from video and images obtained in different farms and event in South of France by the EPLEFPA of Saint-Gaudens (France) [Personal Dataset, soon available on Zenodo - link coming soon] <br>
+ Dataset 7: Images extracted from videos obtained by drone in Carmejane farm in France, it is the current test dataset. Videos and annotations available [here](https://zenodo.org/communities/icaerus_he/records?q=&l=list&p=1&s=10&sort=newest). 
  
 
 All images from both are organized in train/validation directories. Each detection model may have been trained and validated on different datasets, which will be detailed in the model directory.
@@ -27,16 +31,18 @@ All images from both are organized in train/validation directories. Each detecti
 | Dataset 3 | 225 | 297 | 
 |Total | 4 611 | 725 | 
 
-To compare the metrics of each model, **the same test directory** was used. This dataset contains various images of sheep of different colors and shapes. The images were taken by drone on various French farms. The annotated dataset will soon be added to Zenodo. 
+To compare the metrics of each model, **the same test directory** was used (dataset 7). This dataset contains various images of sheep of different colors and shapes. 
 
 ## Results
 
 Metrics of each model are shown below: 
 
-|  | precision | recall | mAP50 | mAP50-95 | fitness
-| --- | :---: | :---: | :---: | :---: | :---: 
+|  | precision | recall | mAP50 | mAP50-95 
+| --- | :---: | :---: | :---: | :---: | 
 | **yolo8m_sheep_v1** | 0.867717 | 0.754648 | 0.831524 | 0.622124 | 0.643064
 | **yolo8m_sheep_v2** | 0.920961 | 0.811414	| 0.902250 | 0.683201 | 0.705105
+| **yolo8m_sheep_v3** | 0.941 | 0.901 | 0.966 | 0.654 |
+| **yolo8m_sheep_v4** | 0.949 | 0.919 | 0.969 | 0.658 |
 | **yolo11n_sheep** | 0.893652 | 0.763918 | 0.862653 | 0.577639 | 0.606140
 | **yolo11s_sheep** | 0.924347 | 0.799301 | 0.887569 | 0.640029 | 0.664783
 

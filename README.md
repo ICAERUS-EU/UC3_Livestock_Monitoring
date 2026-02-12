@@ -29,13 +29,13 @@
 ## Summary
 We propose an use of UAV images and videos to automatically recognize and count animals in extensive areas. 
 
-Four computer vision models are currently in this repository:
+Eight computer vision models are currently in this repository:
 - Two models for cow recognition from UAV images in nadir position.
-- Two models for sheep recognition from UAV videos.
+- Six models for sheep recognition from UAV videos.
 
 An application script using the sheep detection model is also available for counting sheep in the video.
 
-More details on models section.
+More details on [models](models) section.
 
 ## Structure
 
@@ -44,6 +44,7 @@ The repository folders are structured as follow:
 - **data**: some example videos and images to use application scripts. You can find on Zenodo others [sheep video](https://zenodo.org/records/10400302) and [cow images](https://zenodo.org/records/8234156) that you could download and add to data repository to test models and application scripts.
 - **models:** models developed for aerial animals detection.
 - **appplication:** application scripts using sheep models to count animals.
+- **src:** scripts to simplify data handling and one script for fine-tuning yolo models.
 - **platform.json:** organized information about the models.
 
 ## Models
@@ -53,14 +54,27 @@ The [models](https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/mo
 #### _[Cow detection model in aerial view with YOLOv8 - Large images](https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/cow_detection/cow_detection_v1)_
 The model has been trained with YOLOv8 and is capable of detecting cow at a height of 100 meters from large images (resolution > 3000x4000 px).
 
+
 #### _[Cow detection model in aerial view with YOLOv8 - Mosaic images](https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/cow_detection/cow_detection_v2)_
-The model has been trained with YOLOv8 and is able to detect cows from large images divided into several small images (resolution = 640x640 px).
+The model has been trained with YOLOv8 and is able to detect cows from large images divided into several small images.
 
 #### _[Sheep detection model in aerial view with YOLOv8 - version 1](https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/sheep_detection/yolo8m_sheep_v1)_
 The model has been trained with YOLOv8 and is able to detect sheep at a height of 5 to 10 meters.
 
 #### _[Sheep detection model in aerial view with YOLOv8 - version 2](https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/sheep_detection/yolo8m_sheep_v2)_
 The model has been trained with YOLOv8 and is able to detect sheep at a height of 5 to 10 meters. The dataset used to train the model is different from the previous one.
+
+#### _[Sheep detection model in aerial view wtih YOLOv8 - version 3](https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/sheep_detection/yolo8m_sheep_v3)_
+The model has been trained with YOLOv8 and is able to detect sheep at a height of 5 to 10 meters. The dataset used to train the model is the same than first version but with different training parameters.
+
+#### _[Sheep detection model in aerial view wtih YOLOv8 - version 4](https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/sheep_detection/yolo8m_sheep_v4)_
+Fine-tuning of version 3 model using new annotated images acquired in real farm environments under diverse conditions (variations in breed, background, lighting, weather, and animal density). <br>
+
+
+**Gold standard of our models in sheep detection**
+
+
+
 
 #### _[Sheep detection model in aerial view using YOLOv11n](https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/sheep_detection/yolo11n_sheep)_
 The model has been trained with the lightest version of YOLOv11 and is capable of detecting sheep at a height of 5 to 10 meters. This model detects animals faster than other versions of yolo11 and will be more interesting to deploy.
@@ -82,6 +96,7 @@ These two deployment modes ensure both ease of use for non-technical users and f
 
 ## Authors
 - Louise Helary - Institut de l'Elevage (IDELE) - [Louise Helary](https://github.com/louisehelary)
+- Aristide Lauront - Institut de l'Elevage (IDELE) - [Aristide Lauront](https://github.com/lauront-a)
 - Madeline Le Pors - Institut de l'Elevage (IDELE) - [Madeline Le Pors](https://github.com/madelinelepors)
 
 ## Acknowledgments

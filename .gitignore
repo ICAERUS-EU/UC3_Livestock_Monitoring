@@ -1,0 +1,5 @@
+application/deployment/count_sheep_developer/__pycache__/*
+application/deployment/count_sheep_developer/videos/*
+application/deployment/count_sheep_user/__pycache__/*
+application/deployment/count_sheep_user/models/*.onnx
+application/deployment/count_sheep_user/videos/*
