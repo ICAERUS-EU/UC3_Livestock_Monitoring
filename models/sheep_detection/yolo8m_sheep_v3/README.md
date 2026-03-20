@@ -3,14 +3,14 @@
 This repository contains code for a sheep detection model using YOLOv8m. <br>
 
 ## 📄 Dataset
-This model was built using five roboflow universe datasets and a personal dataset that will soon be available in Zenodo. All of them contained aerial photos of sheeps.
+This model was built using five roboflow universe datasets and a personal dataset available in Zenodo. All of them contained aerial photos of sheeps.
 
  Dataset 1: [Aerial Sheep](https://universe.roboflow.com/riis/aerial-sheep/dataset/1) <br>
  Dataset 2: [Sheep Gen4](https://universe.roboflow.com/gbes/sheep-gen4/dataset/1) <br>
  Dataset 3 : [Dusksheepuav](https://universe.roboflow.com/lars-wuethrich/dusksheepuav) <br>
  Dataset 4 : [Rough Terrain Sheep UAV](https://universe.roboflow.com/lars-wuethrich/roughterrainsheepuav) <br>
  Dataset 5 : [Snow Sheep UAV](https://universe.roboflow.com/lars-wuethrich/snowsheepuav) <br>
- Dataset 6 : [Personal Dataset, available on Zenodo - link to come]
+ Dataset 6 :  [Drone images and their annotations of sheep in various conditions (for computer vision purpose)](https://zenodo.org/records/18889623)
 
 All images from both are organized in train/validation directories:
 
@@ -34,9 +34,9 @@ All images from both are organized in train/validation directories:
 
 ## Results
 
-Model was evaluated on a test directory containing 639 images of [walking sheeps](https://zenodo.org/records/12094356).
+The model was evaluated on a test dataset consisting of 428 images of sheep taken from a nadir view. These images and their labels are available in this [Zenodo repository](https://zenodo.org/records/18889623), in the Nadir_only folder.
 
 | Images | Instances | Precision | Recall | mAP50 | mAP50-95
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| 639  | 14365 | 0.941 | 0.901 | 0.966 |   0.654 |
+| 428  |  2906 |  0.956 |  0.956 |  0.988  | 0.919 | 
 

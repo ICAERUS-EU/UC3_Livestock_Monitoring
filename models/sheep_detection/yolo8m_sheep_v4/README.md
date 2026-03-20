@@ -9,7 +9,7 @@ This model was fine-tuned from the sheep detection model v3 using several images
 
  Dataset 1: [Aerial Sheep](https://universe.roboflow.com/riis/aerial-sheep/dataset/1) <br>
  Dataset 2: [Sheep Gen4](https://universe.roboflow.com/gbes/sheep-gen4/dataset/1) <br>
- Dataset 7 : Personal Dataset, available on Zenodo - link coming soon
+ Dataset 6 : [Drone images and their annotations of sheep in various conditions (for computer vision purpose)](https://zenodo.org/records/18889623)
 
 All images from both are organized in train/validation directories:
 
@@ -42,9 +42,9 @@ phase B:
 
 ## Results
 
-Model was evaluated on a test directory containing 639 images of [walking sheeps](https://zenodo.org/records/12094356).
+The model was evaluated on a test dataset consisting of 428 images of sheep taken from a nadir view. These images and their labels are available in this [Zenodo repository](https://zenodo.org/records/18889623), in the Nadir_only folder.
 
 | Images | Instances | Precision | Recall | mAP50 | mAP50-95
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| 639  | 14365 | 0.941 | 0.901 | 0.966 |   0.654 |
+| 428   | 2906  | 0.97 |  0.966 | 0.991 | 0.969 |
 

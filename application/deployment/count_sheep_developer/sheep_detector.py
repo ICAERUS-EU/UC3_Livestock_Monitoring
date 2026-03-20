@@ -31,7 +31,7 @@ class SheepDetector:
         # Export onnx model if it dosn't exist
         if not os.path.exists(self.onnx_path):
             print("Exporting model to ONNX...")
-            self.pytorch_model.export(format="onnx", imgsz=640, simplify=False)
+            self.pytorch_model.export(format="onnx", imgsz=(640,480), simplify=False)
             print(f"Exported to {self.onnx_path}")
         else:
             print("ONNX model already exists.")
@@ -52,9 +52,12 @@ class SheepDetector:
     def setup_tracking(self, frame_rate):
         # Set up ByteTrack tracking with custom parameters
         self.tracker = sv.ByteTrack(frame_rate=frame_rate)
-        self.tracker.max_time_lost = 5
+        self.tracker.track_activation_threshold=0.4,
+        self.tracker.lost_track_buffer=60, 
+        self.tracker.minimum_matching_threshold=0.7, # default = 0.8,
+        '''self.tracker.max_time_lost = 5
         self.tracker.track_activation_threshold = 0.6
-        self.tracker.minimum_matching_threshold = 0.8
+        self.tracker.minimum_matching_threshold = 0.8'''
 
         # Create the output video file name
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")

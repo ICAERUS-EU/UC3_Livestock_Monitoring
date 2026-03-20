@@ -29,9 +29,11 @@ All images from both are organized in train/validation/test:
 
 ## Results
 
-| precision | recall | mAP50 | mAP50-95 | fitness
-| :---: | :---: | :---: | :---: | :---: 
-| 0.867717 | 0.754648 | 0.831524 | 0.622124 | 0.643064
+The model was evaluated on a test dataset consisting of 428 images of sheep taken from a nadir view. These images and their labels are available in this [Zenodo repository](https://zenodo.org/records/18889623), in the Nadir_only folder.
+
+| Images | Instances | Precision | Recall | mAP50 | mAP50-95
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| 428  | 2906  | 0.93  | 0.832  |  0.899  | 0.698 |
 
 https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/assets/99217487/0bbd56ab-905b-473e-91db-b5fb0aa479ef
 

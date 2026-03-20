@@ -3,6 +3,6 @@ application/deployment/count_sheep_developer/videos/*
 application/deployment/count_sheep_user/__pycache__/*
 application/deployment/count_sheep_user/models/*.onnx
 application/deployment/count_sheep_user/videos/*
-application/deployment/*/models/*.onnx
+application/deployment/count_sheep_developer/models/*.onnx
 UC3_livestock_env/*
 .vscode/*

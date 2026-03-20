@@ -31,13 +31,13 @@ class InterfaceApp(QWidget):
 
         # Window title
         self.setWindowTitle('ICAERUS')
-        self.setGeometry(100, 100, 600, 400) 
-        #TODO change Geometry
+        
+        self.setFixedSize(1155, 850) 
 
         # Default values
         self.selected_fps = 15   
-        self.model_path = os.path.join(models_dir, "yolo11n.pt")
-        self.model_suffix = "11n"
+        self.model_path = os.path.join(models_dir, "yolo8m.pt")
+        self.model_suffix = "8m"
         self.input_video_path = None
         self.drawing_crop = False
         self.crop_start_point = None
@@ -77,20 +77,20 @@ class InterfaceApp(QWidget):
         self.model_label.setAlignment(Qt.AlignCenter)
 
         self.radio_yolo8m = QRadioButton("YOLO8m")
+        self.radio_yolo8n = QRadioButton("YOLO8n")
         self.radio_yolo11n = QRadioButton("YOLO11n")
-        #self.radio_yolo11l = QRadioButton("YOLO11l")
-        self.radio_yolo11n.setChecked(True)  # Default value
+        self.radio_yolo8m.setChecked(True)  # Default value
 
         self.model_group = QButtonGroup(self)
         self.model_group.addButton(self.radio_yolo8m, 0)
-        self.model_group.addButton(self.radio_yolo11n, 1)
-        #self.model_group.addButton(self.radio_yolo11l, 2)
+        self.model_group.addButton(self.radio_yolo8n, 1)
+        self.model_group.addButton(self.radio_yolo11n, 2)
 
         # Dictionary to link ID to model path
         self.model_paths = {
             0: (os.path.join(models_dir, "yolo8m.pt"), "8m"),
-            1: (os.path.join(models_dir, "yolo11n.pt"), "11n"),
-            #2: ("models/yolo11l.pt", "11l")
+            1: (os.path.join(models_dir, "yolo8n.pt"), "8n"),
+            2: (os.path.join(models_dir,"yolo11n.pt"), "11n")
         }
 
         self.model_group.buttonClicked[int].connect(self.update_model_selection)
@@ -232,8 +232,8 @@ class InterfaceApp(QWidget):
         model_layout.addStretch()
         model_layout.addWidget(self.model_label)
         model_layout.addWidget(self.radio_yolo8m)
+        model_layout.addWidget(self.radio_yolo8n)
         model_layout.addWidget(self.radio_yolo11n)
-        #model_layout.addWidget(self.radio_yolo11l)
         model_layout.addStretch()
 
         # Layout for fps selection
