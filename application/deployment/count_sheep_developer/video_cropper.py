@@ -27,7 +27,7 @@ class VideoCropper(QObject):
         self.temp_crop_rect = None
         self.scale_x = scale_x
         self.scale_y = scale_y
-        self.crop_video_path = "videos/crop_videos"
+        self.crop_video_path = os.path.join(os.path.dirname(input_video_path), "..", "crop_videos")
 
         
 

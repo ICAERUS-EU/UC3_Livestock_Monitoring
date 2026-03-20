@@ -1,39 +1,11 @@
 
 
-
-
-
-
-
-
-
-
 # ============================================================================================================
 #                   🐑 Bienvenue dans le projet de comptage de mouton par IA & drone🐑
 #          Ce fichier permet d'ouvrir une interface afin de compter les moutons via des vidéos drones
 #                          sans que vous ayez à plonger dans le code compliqué.
 # ============================================================================================================
 
-
-
-
-
-
-
-
-
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
 import sys
 import cv2
 from ffpyplayer.player import MediaPlayer
@@ -46,20 +18,25 @@ from PyQt5.QtWidgets import ( QApplication, QLabel, QWidget, QVBoxLayout, QHBoxL
 from PyQt5.QtCore import Qt, QThread, QTimer, QRegularExpression
 from PyQt5.QtGui import QImage, QPixmap, QRegularExpressionValidator
 from PyQt5.QtMultimediaWidgets import QVideoWidget
+import os
+import sys
 
 
 class InterfaceApp(QWidget):
     def __init__(self):
         super().__init__()
 
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        models_dir = os.path.join(script_dir, "models")
+
         # Window title
         self.setWindowTitle('ICAERUS')
-        self.setGeometry(100, 100, 600, 400)
-
+        self.setGeometry(100, 100, 600, 400) 
+        #TODO change Geometry
 
         # Default values
         self.selected_fps = 15   
-        self.model_path = "models/yolo11n.pt"
+        self.model_path = os.path.join(models_dir, "yolo11n.pt")
         self.model_suffix = "11n"
         self.input_video_path = None
         self.drawing_crop = False
@@ -68,6 +45,7 @@ class InterfaceApp(QWidget):
         self.temp_crop_rect = None
         self.video_line_points = []
         self.crop_video_path = None
+        #TODO: add default times
 
 
         # Hello label
@@ -76,13 +54,11 @@ class InterfaceApp(QWidget):
         self.hello_label.setAlignment(Qt.AlignCenter)
         self.hello_label.setWordWrap(True)
 
-
         # Video selection
         self.video_selection_label = QLabel('Choisissez une vidéo :')
         self.video_selection_label.setStyleSheet("font-size: 16px; color: #333;")
         self.video_selection_label.setAlignment(Qt.AlignCenter)
         self.video_selection_label.setWordWrap(False)
-
 
         # Label to display the selected video path
         self.input_video_path_label = QLabel('')
@@ -90,12 +66,10 @@ class InterfaceApp(QWidget):
         self.input_video_path_label.setAlignment(Qt.AlignCenter)
         self.input_video_path_label.setWordWrap(True)
 
-
         # Button to choose a video file
         self.choose_video_button = QPushButton('Choisir une video')
         self.choose_video_button.setStyleSheet("font-size: 16px;")
         self.choose_video_button.clicked.connect(self.choose_video)
-
 
         # Model selection
         self.model_label = QLabel("Choisissez le modèle de détection :")
@@ -114,8 +88,8 @@ class InterfaceApp(QWidget):
 
         # Dictionary to link ID to model path
         self.model_paths = {
-            0: ("models/yolo8m.pt", "8m"),
-            1: ("models/yolo11n.pt", "11n"),
+            0: (os.path.join(models_dir, "yolo8m.pt"), "8m"),
+            1: (os.path.join(models_dir, "yolo11n.pt"), "11n"),
             #2: ("models/yolo11l.pt", "11l")
         }
 
@@ -153,7 +127,7 @@ class InterfaceApp(QWidget):
         # Image and video preview
         self.first_frame_label = QLabel()
         self.video_widget = QVideoWidget()
-        self.video_widget.setFixedSize(640, 640)
+        self.video_widget.setFixedSize(640, 480)
 
         self.display_stack = QStackedWidget()
         self.display_stack.addWidget(self.first_frame_label) 
@@ -375,6 +349,8 @@ class InterfaceApp(QWidget):
         
 
     def display_first_frame(self, video_path):
+        if not os.path.isabs(video_path):
+            video_path = os.path.abspath(video_path)
         # Load the first frame from the given video file
         cap = cv2.VideoCapture(video_path)
         ret, frame = cap.read()
@@ -604,6 +580,11 @@ class InterfaceApp(QWidget):
 
 
     def sheep_detector(self, video_path):
+        if not os.path.isabs(video_path):
+            video_path = os.path.abspath(video_path)
+        
+        print(f"DEBUG: Chemin absolu = {video_path}")  # Pour vérification
+    
         # Start the loading animation
         self.start_loading()
 
@@ -650,6 +631,8 @@ class InterfaceApp(QWidget):
 
 
     def display_video(self, video_path):
+        if not os.path.isabs(video_path):
+            video_path = os.path.abspath(video_path)
         # Create video output label
         if not hasattr(self, 'media_player'):
             self.media_player = None
@@ -811,14 +794,11 @@ class InterfaceApp(QWidget):
             except Exception as e:
                 print(f"[STOP VIDEO] Erreur : {e}")
 
-
-
     def cancel_counting(self):
         # Clear the list of line points used for drawing
         self.line_points = []
         self.crop_start_time = None
         self.crop_end_time = None
-
 
         # Hide the crop, draw line, reset buttons, and first frame
         self.reduce_video_button.hide()

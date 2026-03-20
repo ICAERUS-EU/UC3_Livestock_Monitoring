@@ -4,8 +4,12 @@ import os
 import numpy as np
 from datetime import datetime
 
+script_dir = os.path.dirname(os.path.abspath(__file__))
+models_dir = os.path.join(script_dir, "models")
+video_dir = os.path.join(script_dir, "videos")
+
 class SheepDetector:
-    def __init__(self, pt_path="models/yolo11n.pt", export_path = "videos/output_videos"):
+    def __init__(self, pt_path=os.path.join(models_dir,"yolo11n.pt"), export_path = os.path.join(video_dir,"output_videos")):
         # Init molels and export video path
         self.pt_path = pt_path
         self.export_path = export_path
@@ -22,7 +26,7 @@ class SheepDetector:
 
     def export_model(self, model_suffix):
         # Build ONNX model path
-        self.onnx_path = f"models/yolo{model_suffix}.onnx"  
+        self.onnx_path = os.path.join(models_dir,f"yolo{model_suffix}.onnx")
        
         # Export onnx model if it dosn't exist
         if not os.path.exists(self.onnx_path):
@@ -106,6 +110,7 @@ class SheepDetector:
         frames_generator = sv.get_video_frames_generator(source_path=video_path)
 
         os.makedirs(os.path.dirname(self.export_path), exist_ok=True)
+        print(os.path.dirname(self.export_path))
 
         with sv.VideoSink(target_path=self.export_path, video_info=video_info) as sink:
             for frame in frames_generator:
