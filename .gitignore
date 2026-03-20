@@ -5,3 +5,4 @@ application/deployment/count_sheep_user/models/*.onnx
 application/deployment/count_sheep_user/videos/*
 application/deployment/*/models/*.onnx
 UC3_livestock_env/*
+.vscode/*
